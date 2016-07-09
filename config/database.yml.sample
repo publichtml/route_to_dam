@@ -1,0 +1,22 @@
+# Copy this to config/database.yml and setup as you like
+
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: route_to_dam_development
+  username: root
+  password:
+
+test:
+  <<: *default
+  database: route_to_dam_test
+  username: root
+  password:
+
+production:
+  <<: *default
+  database: route_to_dam_production
