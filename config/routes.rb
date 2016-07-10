@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :dams do
+    resource  :reservoir
     resources :discharge_facilities
   end
 
