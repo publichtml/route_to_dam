@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  namespace :admin do
   resources :dams do
     resource  :reservoir
     resources :discharge_facilities
@@ -14,4 +15,5 @@ Rails.application.routes.draw do
   # patch  'dams/:id',      to: 'dams#update'
   # put    'dams/:id',      to: 'dams#update' # deprecated
   # delete 'dams/:id',      to: 'dams#destroy'
+  end
 end
