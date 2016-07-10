@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :dams do
     resource  :reservoir
     resources :discharge_facilities
+    patch     :water_level
   end
 
   # 以下8行は "resources :dams" と等価
