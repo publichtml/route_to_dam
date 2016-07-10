@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :dams
+  resources :dams do
+    resources :discharge_facilities
+  end
 
   # 以下8行は "resources :dams" と等価
   # get    'dams',          to: 'dams#index'
